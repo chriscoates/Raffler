@@ -2,6 +2,6 @@ class Raffler.Views.EntriesIndex extends Backbone.View
 
   template: JST['entries/index']
 
-render: ->
-  $(@el).html(@template())
-  this
+  render: ->
+    $(@el).html(@template(entries: "Entries go here"))
+    this
